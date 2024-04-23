@@ -1,0 +1,143 @@
+nav li, a, button, .logo {
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+#click {
+	display: none;
+}
+nav{
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	background-color: #f5f5f5;;
+}
+nav header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100vw;
+}
+
+nav .nav__links {
+	list-style: none;
+}
+
+.nav__links li {
+	display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover, .active {
+	color: #0088A9;
+}
+
+nav button {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: rgb(138, 200, 216);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+
+.logo {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.menu-btn {
+	color: black;
+	display: none;
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+@media (max-width: 1250px) {
+	nav .nav__links {
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background-color: white;
+		height: 100vh;
+		width: 100%;
+		display: block;
+		text-align: center;
+		transition: all 0.3s ease;
+		z-index: 1;
+	}
+
+	nav .cta {
+		display: inline-flex;
+		position: fixed;
+		bottom: 80px;
+		width: 100vw;
+		left: -100;
+		justify-content: center;
+		transition: all 0.3s ease;
+	}
+
+
+	nav #click:not(:checked) ~ .nav__links{
+		left: -100%;
+	}
+	
+	nav #click:not(:checked) ~ .cta{
+		left: -100%;
+	}
+
+	nav #click:checked ~ .nav__links {
+		left: 0%;
+	}
+
+	nav #click:checked ~ .cta{
+		left: 0%;
+	}
+
+	nav #click:checked ~ .menu-btn i:before {
+		content: "\f00d";
+	}
+
+	nav .nav__links li {
+		display: block;
+		margin-top: 40px;
+	}
+
+	nav .menu-btn {
+		display: inline-block;
+	}
+}
+@media (max-width: 600px) {
+    nav header {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav__links li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+	.menu-btn{
+		margin-top: 20px;
+	}
+}
