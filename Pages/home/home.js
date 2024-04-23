@@ -1,9 +1,11 @@
 import { Navbar } from "../../Components/navbar/navbar.js";
 import { Footer } from "../../Components/footer/footer.js";
-import { fetchData } from "../../index.js";
+import { fetchData } from "../../dataFetch.js";
 import { Card } from "../../Components/card/card.js";
 
+//fetching data
 fetchData();
+// ia users din localStorage
 const users = JSON.parse(localStorage.getItem("users"));
 
 document.getElementById("layout").innerHTML = `

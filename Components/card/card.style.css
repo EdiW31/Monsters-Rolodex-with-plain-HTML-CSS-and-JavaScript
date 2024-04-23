@@ -65,6 +65,9 @@
   width: 1em;
   height: 1em;
 }
+.icon-button.active svg {
+  fill: red;
+}
 .icon-button:hover, .icon-button:focus {
   background-color: #EC4646;
   color: #FFF;
