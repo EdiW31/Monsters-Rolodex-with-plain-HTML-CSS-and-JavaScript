@@ -19,7 +19,7 @@ window.handleFavoriteClick = function (e) {
 };
 
 // Aici setam clasa active pentru butonul de favorite
-// este o functie care este called at page load
+// este o functie care este called
 window.onload = function () {
   let favorites = localStorage.getItem("favorites");
   favorites = favorites ? JSON.parse(favorites) : [];

@@ -51,12 +51,21 @@ body{
   color: rgb(106, 168, 137);
   letter-spacing: .5px;
 }
+/*Users din home.js*/
 #users {
   width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
+  gap: 0px;
+}
+/*Users din about.js*/
+#fav-users {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
 }
 
 @media (max-width: 900px) {

@@ -14,7 +14,7 @@ document.getElementById("layout").innerHTML = `
   <div class="container">
     <h1 contenteditable>Welcome</h1>
     <p>This is a website where you can find</p>
-    <p>other monsters details.</p>
+    <p>all of your Monster friends.</p>
   </div>
   <div id="users">
     ${users.map(Card).join("")}

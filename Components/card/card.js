@@ -22,7 +22,7 @@ export function Card({ id, name, email }) {
                 <path d="M16 2v4" />
                 <path d="M2 10h20" />
               </svg>
-              ${email}
+              <h3 class="info">Email:</h3> <p class="info"> ${email}</p>
             </div>
           </div>
         </article>
