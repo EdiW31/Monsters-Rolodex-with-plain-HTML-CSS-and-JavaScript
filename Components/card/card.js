@@ -1,4 +1,4 @@
-export function Card({ id, name, email }) {
+export function Card({ id, name, email, website, phone }) {
   return `
       <div class="card-list">
         <article class="card">
@@ -25,6 +25,7 @@ export function Card({ id, name, email }) {
               <h3 class="info">Email:</h3> <p class="info"> ${email}</p>
             </div>
           </div>
+          <button class="more-info-button" data-id="${id}" data-name="${name}" data-email="${email}" data-website="${website}" data-phone="${phone}"><a href="../../Pages/aboutMonsters/aboutMonsters.html">Contact</a></button>
         </article>
       </div>
     `;

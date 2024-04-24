@@ -2,6 +2,9 @@
 @import url('./Components/navbar/navbar.style.css');
 @import url('./Components/footer/footer.style.css');
 @import url('./Components/card/card.style.css');
+@import url('./Components/moreDetailCard/moreDetailCard.style.css');
+@import url('./Components/form/form.style.css');
+@import url('./Components/contactForm/contact.style.css');
 *,
 *::before,
 *::after {
@@ -66,6 +69,26 @@ body{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
+}
+
+.more-info-button{
+  display: flex;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 10px;
+  width: 90%;
+  justify-content: center;
+  border: none;
+  border-radius: 15px;
+}
+
+#contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {

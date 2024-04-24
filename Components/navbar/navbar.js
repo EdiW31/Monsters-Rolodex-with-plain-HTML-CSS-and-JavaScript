@@ -9,12 +9,12 @@ export function Navbar() {
           </label>
 
           <ul class="nav__links">
-              <li><a class="active" href="/">All Monsters</a></li>
+              <li><a href="/">All Monsters</a></li>
               <li><a href="../../Pages/about/about.html">Best Monsters</a></li>
-              <li><a href="about.html">Add Monsters</a></li>
+              <li><a href="../../Pages/createMonster/createMonster.html">Add Monsters</a></li>
           </ul>
 
-          <a class="cta" href="#"><button>Contact</button></a>
+          <a class="cta" href="../../Pages/contact/contact.html"><button>Contact</button></a>
         </header>
     </nav>
     `;
